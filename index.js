@@ -40,7 +40,15 @@ const transformWords = (input, options, joinChar = '', transformFn = s => s) => 
 };
 
 const lowercase = (input = '', options) => input.toLocaleLowerCase(options?.locale);
-const snakecase = (input = '', options) => lowercase(transformWords(input, options, '_'), options);
+const snakecase = (input = '', options) => {
+  const output = lowercase(transformWords(input, options, '_'), options);
+
+  if (options?.uppercase) {
+    return output.toLocaleUpperCase(options?.locale);
+  }
+
+  return output;
+};
 
 module.exports = snakecase;
 module.exports.snakecase = snakecase;

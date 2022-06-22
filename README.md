@@ -37,7 +37,13 @@ console.log(snakecase('foo 2 bar 5 baz')); //=> 'foo_2_bar_5_baz'
 console.log(snakecase('foo2bar5baz')); //=> 'foo2bar5baz'
 ```
 
-## Uppercase character sequences
+## Options
+
+### .preserveConsecutiveUppercase
+
+**Type**: `boolean`
+
+**Default**: `false`
 
 This library attemps to sensibly match sequences of uppercase characters in a way that mirrors real-world usage. For example, the following is default behavior:
 
@@ -51,6 +57,19 @@ However, if you wish to preserve upper case character sequences, you may pass an
 ```js
 console.log(snakecase('JSONStringify', { preserveConsecutiveUppercase: true })); //=> jsons_tringify
 console.log(snakecase('TheIRSIsMean', { preserveConsecutiveUppercase: true })); //=> the_irsi_s_mean
+```
+
+### .uppercase
+
+**Type**: `boolean`
+
+**Default**: `false`
+
+Convert the output string to upper case.
+
+```js
+console.log(snakecase('fooBarBaz', { uppercase: true })); //=> 'FOO_BAR_BAZ'
+console.log(snakecase('FooBarBaz', { uppercase: true })); //=> 'FOO_BAR_BAZ'
 ```
 
 ## Options
