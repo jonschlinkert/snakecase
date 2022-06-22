@@ -1,0 +1,59 @@
+{
+  "name": "snakecase",
+  "description": "Convert a string to snakecase. Similar to kebab-case but uses underscores instead of dashes.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jonschlinkert/snakecase",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/snakecase",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/snakecase/issues"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "gulp-format-md": "^2.0.0"
+  },
+  "keywords": [
+    "case",
+    "casing",
+    "string",
+    "util",
+    "snake",
+    "snake-case",
+    "snakecase",
+    "format",
+    "convert",
+    "kebab",
+    "dash",
+    "underscore",
+    "lodash"
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "description": "Other awesome string libs you might like:",
+      "list": [
+        "pascalcase",
+        "romanize",
+        "word-wrap",
+        "wordcount"
+      ]
+    },
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
