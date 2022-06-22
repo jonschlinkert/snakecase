@@ -1,6 +1,6 @@
 {
   "name": "snakecase",
-  "description": "Convert a string to snakecase. Similar to kebab-case but uses underscores instead of dashes.",
+  "description": "Convert a string to snake case (snake_case). Similar to kebab-case but uses underscores instead of dashes.",
   "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/snakecase",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
